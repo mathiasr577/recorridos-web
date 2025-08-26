@@ -9,16 +9,13 @@ export default function Home() {
       {/* Hero FULLSCREEN con imagen */}
       <section className="relative h-[92vh] w-full">
         <Image
-          src="/recorridos-hero.png"   // <-- la imagen que subiste a /public
+          src="/recorridos-hero.png"
           alt="Fachada elegante Recorridos"
           fill
           className="object-cover"
           priority
         />
-        {/* Oscurecedor para leer mejor el texto */}
         <div className="absolute inset-0 bg-black/40" />
-
-        {/* Contenido centrado */}
         <div className="relative z-10 flex h-full items-center justify-center px-4 text-center text-white">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-semibold tracking-tight">
@@ -27,8 +24,6 @@ export default function Home() {
             <p className="mt-4 text-lg md:text-xl text-white/80">
               Arriendos y ventas con acompañamiento experto.
             </p>
-
-            {/* Botones / acción principal */}
             <div className="mt-8 flex items-center justify-center gap-3">
               <a
                 href="https://wa.me/573001234567?text=Hola%20vengo%20de%20Recorridos"
@@ -36,20 +31,13 @@ export default function Home() {
               >
                 WhatsApp
               </a>
-              <a
-                href="#destacadas"
-                className="btn btn-ghost text-base md:text-lg"
-              >
+              <a href="#destacadas" className="btn btn-ghost text-base md:text-lg">
                 Ver propiedades
               </a>
             </div>
-
-            {/* Buscador (opcional) */}
             <div className="mt-8">
               <SearchBar />
             </div>
-
-            {/* Micro-trust */}
             <div className="mt-6 flex flex-wrap items-center justify-center gap-3 text-sm text-white/80">
               <span>+15 años de experiencia</span>
               <span>•</span>
@@ -82,9 +70,7 @@ export default function Home() {
           <div className="grid items-center gap-8 md:grid-cols-2">
             <div>
               <h3 className="text-2xl font-semibold">¿Vendes o arriendas tu inmueble?</h3>
-              <p className="mt-3 text-black/70">
-                Solicita una valoración sin costo y te contactamos hoy.
-              </p>
+              <p className="mt-3 text-black/70">Solicita una valoración sin costo y te contactamos hoy.</p>
               <div className="mt-6 flex gap-3">
                 <a className="btn btn-primary" href="https://wa.me/573001234567?text=Quiero%20valorar%20mi%20inmueble">
                   Contactar por WhatsApp
@@ -103,3 +89,15 @@ export default function Home() {
                 <select className="rounded-xl border border-black/10 px-3 py-3">
                   <option>Apartamento</option>
                   <option>Casa</option>
+                  <option>Oficina</option>
+                  <option>Local</option>
+                </select>
+                <button className="btn btn-primary md:col-span-2">Quiero una valoración</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
